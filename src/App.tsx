@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import { SignInPage } from './auth/pages/SignInPage'
 import { HomePage } from './auth/pages/HomePage'
 import { NewBondPage } from './auth/pages/NewBondPage'
-import { EditBondPage } from './auth/pages/EditBondPage'
-import { BondsListPage } from './auth/pages/BondListPage'
+import { ManageBondsPage } from './auth/pages/ManageBondsPage'
+import { Profile } from './auth/pages/Profile'
 
 function App() {
   return (
@@ -14,8 +14,10 @@ function App() {
         <Route path='/sign-in' element={<SignInPage />}/>
         <Route path='/home' element={<HomePage />}/>
         <Route path='/newbond' element={<NewBondPage />}/>
-        <Route path='/editbond' element={<EditBondPage />}/>
-        <Route path='/bondslist' element={<BondsListPage />}/>
+        <Route path='/manage-bonds' element={<ManageBondsPage />}/>
+        <Route path='/profile' element={<Profile />}/>
+
+
       </Routes>
     </BrowserRouter>
   )
